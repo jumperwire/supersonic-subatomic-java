@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: big-fat-java
+  labels:
+    app: big-fat-java
+spec:
+  ports:
+  - name: http
+    port: 8080
+  selector:
+    app: big-fat-java
+  type: NodePort
