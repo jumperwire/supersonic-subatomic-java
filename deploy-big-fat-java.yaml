@@ -22,10 +22,10 @@ spec:
         resources:
           requests:
             memory: "130Mi"
-            cpu: "500m"
+            cpu: "50m"
           limits:
             memory: "130Mi"
-            cpu: "750m"
+            cpu: "75m"
         livenessProbe:
           httpGet:
               port: 8080
