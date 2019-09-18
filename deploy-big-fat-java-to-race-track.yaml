@@ -9,13 +9,13 @@ spec:
   selector:
     matchLabels:
       app: big-fat-java
-  nodeSelector:
-    failure-domain.beta.kubernetes.io/zone: us-east-2a
   template:
     metadata:
       labels:
         app: big-fat-java
     spec:
+      nodeSelector:
+        failure-domain.beta.kubernetes.io/zone: us-east-2a
       containers:
       - name: big-fat-java
         image: quay.io/burrsutter/booted:1.0.0
