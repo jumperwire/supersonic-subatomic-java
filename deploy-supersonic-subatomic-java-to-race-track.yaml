@@ -15,7 +15,7 @@ spec:
         app: supersonic-subatomic-java
     spec:
       nodeSelector:
-        failure-domain.beta.kubernetes.io/zone: us-east-2a
+        role: quarkus-node
       containers:
       - name: supersonic-subatomic-java
         image: quay.io/burrsutter/quarked:1.0.0
