@@ -18,7 +18,8 @@ spec:
         role: java-node
       tolerations:
       - key: "racetrack"
-        operator: "Exists"
+        operator: "Equal"
+        value: "true"
         effect: "NoExecute"
       containers:
       - name: big-fat-java
