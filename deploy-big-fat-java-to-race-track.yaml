@@ -16,6 +16,10 @@ spec:
     spec:
       nodeSelector:
         role: java-node
+      tolerations:
+      - key: "racetrack"
+        operator: "Exists"
+        effect: "NoExecute"
       containers:
       - name: big-fat-java
         image: quay.io/burrsutter/booted:1.0.0
