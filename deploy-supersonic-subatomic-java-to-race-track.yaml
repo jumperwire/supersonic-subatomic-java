@@ -16,6 +16,10 @@ spec:
     spec:
       nodeSelector:
         role: quarkus-node
+      tolerations:
+      - key: "racetrack"
+        operator: "Exists"
+        effect: "NoExecute"
       containers:
       - name: supersonic-subatomic-java
         image: quay.io/burrsutter/quarked:1.0.0
