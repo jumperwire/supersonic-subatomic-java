@@ -18,7 +18,8 @@ spec:
         role: quarkus-node
       tolerations:
       - key: "racetrack"
-        operator: "Exists"
+        operator: "Equal"
+        value: "true"
         effect: "NoExecute"
       containers:
       - name: supersonic-subatomic-java
